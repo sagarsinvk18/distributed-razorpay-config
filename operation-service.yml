@@ -1,0 +1,13 @@
+server:
+  port: 9020
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/razorpay-operation-db
+
+app:
+  webhook:
+    delivery:
+      redis-key: webhook-retry
+      poll-batch-size: 100
+
