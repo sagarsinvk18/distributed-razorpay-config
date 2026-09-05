@@ -7,11 +7,11 @@ app:
     public-routes:
       - "/v1/auth/**"
       - "/webhook/**"
-    rate-limit:
-      method: fixed
-      use-case:
-        api-key:
-          request-per-minute: 200
+  rate-limit:
+    method: fixed
+    use-case:
+      api-key:
+        request-per-minute: 200
 
 jwt:
   secret-key: don't-use-in-prodQHBHBSHSJNJnjdicjicdu487h4nf83uhu4
