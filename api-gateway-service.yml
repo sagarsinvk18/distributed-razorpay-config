@@ -13,6 +13,9 @@ app:
         api-key:
           request-per-minute: 200
 
+jwt:
+  secret-key: don't-use-in-prodQHBHBSHSJNJnjdicjicdu487h4nf83uhu4
+
 spring:
   cloud:
     gateway:
