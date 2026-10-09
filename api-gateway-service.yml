@@ -44,6 +44,15 @@ spring:
               predicates:
                 - Path=/webhook/**, 
 
+---
+
+spring:
+  cloud:
+    activate:
+      on-profile: k8s
+
+jwt:
+  secret-key: ${JWT_SECRET}
 
 
 
