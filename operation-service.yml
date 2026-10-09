@@ -43,3 +43,14 @@ resilience4j:
         max-attempts: 2
         wait-duration: 500ms
 
+---
+
+spring:
+  config:
+    activate:
+      on-profile: k8s
+    datasource:
+      url: jdbc:postgresql://postgres.razorpay-core.svc.cluster.local:5432/razorpay-operation-db
+      username: merchant_user
+      password: ${OPERATION_DB_PASSWORD}
+
