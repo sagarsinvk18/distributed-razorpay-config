@@ -40,7 +40,7 @@ spring:
                 - Path=/v1/vault/**
 
             - id: operation-service
-              url: ${OPEARATIONS_SERVICE_URI:lb://operation-service}
+              url: ${OPEARATION_SERVICE_URI:lb://operation-service}
               predicates:
                 - Path=/webhook/**, 
 
