@@ -99,7 +99,7 @@ management:
 MERCHANT_SERVICE_URI: http://merchant-service
 PAYMENT_SERVICE_URI: http://payment-service
 VAULT_SERVICE_URI: http://vault-service
-OPERATIONS_SERVICE_URI: http://operations-service
+OPERATION_SERVICE_URI: http://operation-service
   
       
         
