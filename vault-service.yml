@@ -27,3 +27,6 @@ spring:
       username: vault_user
       password: ${VAULT_DB_PASSWORD}
 
+vault:
+  master-key: ${VAULT_MASTER_KEY}
+
