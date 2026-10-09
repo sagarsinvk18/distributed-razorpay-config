@@ -25,22 +25,22 @@ spring:
         webmvc:
           routes:
             - id: merchant-service
-              url: lb://merchant-service
+              url: ${MERCHANT_SERVICE_URI:lb://merchant-service}
               predicates:
                 - Path=/v1/auth/**, /v1/merchants/**
 
             - id: payment-service
-              url: lb://payment-service
+              url: ${PAYMENT_SERVICE_URI:lb://payment-service}
               predicates:
                 - Path=/v1/orders/**, /v1/payments/**
 
             - id: vault-service
-              url: lb://vault-service
+              url: ${VAULT_SERVICE_URI:lb://vault-service}
               predicates:
                 - Path=/v1/vault/**
 
             - id: operation-service
-              url: lb://operation-service
+              url: ${OPEARATIONS_SERVICE_URI:lb://operation-service}
               predicates:
                 - Path=/webhook/**, 
 
